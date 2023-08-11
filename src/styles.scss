@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: white;
+}
+
+.main-container {
+    background-image: none;
+    background-color: black;
+    opacity: 0.9;
+    @media (min-width: 1200px) {
+        height: 100%;
+        background-image: url("assets/backgrounds/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.9;
+    }
+}

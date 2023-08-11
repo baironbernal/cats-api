@@ -1,0 +1,10 @@
+<div class="example-button-row">
+    <button mat-fab extended color="accent" routerLink="/images/favorites">
+      <mat-icon>favorite</mat-icon>
+      Favoritos
+    </button>
+</div>
+
+<section class="images-cats">
+    <app-card *ngFor="let image of imagesCats" [catImage]="image"></app-card>
+</section>

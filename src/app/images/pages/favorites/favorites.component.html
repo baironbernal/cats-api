@@ -1,0 +1,10 @@
+<section class="images-cats">
+    <ng-template ngIf="favs; else #notFound">
+        <app-card *ngFor="let fav of favs" [catImage]="fav"></app-card>
+    </ng-template>
+
+    <ng-template #notFound>
+        Please friend, login.
+    </ng-template>
+
+</section>
