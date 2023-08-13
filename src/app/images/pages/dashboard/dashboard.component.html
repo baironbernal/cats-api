@@ -1,4 +1,4 @@
-<div class="example-button-row">
+<div class="example-button-container">
     <button mat-fab extended color="accent" routerLink="/images/favorites">
       <mat-icon>favorite</mat-icon>
       Favoritos
@@ -6,5 +6,5 @@
 </div>
 
 <section class="images-cats">
-    <app-card *ngFor="let image of imagesCats" [catImage]="image"></app-card>
+    <app-card *ngFor="let image of imagesCats" [catImage]="image" [configButton]="configButton"></app-card>
 </section>

@@ -1,0 +1,17 @@
+.form-cat {
+    display: flex;
+    padding: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+        margin: 20px 0;
+        input {
+            border: 2px white solid;
+            padding: 15px;
+            margin-left: 5px;
+            background-color: transparent;
+            color: white;
+        }
+    }
+}

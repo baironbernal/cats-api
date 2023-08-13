@@ -1,0 +1,17 @@
+<div class="example-button-container">
+    <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" routerLink="/cats/create-form">
+        <mat-icon>plus_one</mat-icon>
+      </button>
+</div>
+
+
+<section class="images-cats">
+    <ng-template ngIf="favs; else #notFound">
+        <app-card *ngFor="let cat of cats" [cat]="cat"></app-card>
+    </ng-template>
+
+    <ng-template #notFound>
+        Not found cats
+    </ng-template>
+
+</section>

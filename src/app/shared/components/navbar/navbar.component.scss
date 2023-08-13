@@ -1,4 +1,16 @@
 .mat-navbar {
-    background-color: cornflowerblue;
+    background-color: white;
+    color: black;
     justify-content: space-between;
+}
+
+.mat__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-header-image {
+    background-image: url("../../../../assets/backgrounds/shadow.png");
+    background-size: cover;
 }

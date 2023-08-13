@@ -8,3 +8,12 @@
         background-color: #74A0EE;
     }
 }
+
+.mdc-card__actions {
+    justify-content: center;
+}
+
+.example-header-image {
+    background-image: url("../../../../assets/backgrounds/shadow.png");
+    background-size: cover;
+}

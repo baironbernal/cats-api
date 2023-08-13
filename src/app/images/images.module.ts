@@ -5,7 +5,7 @@ import { ImagesRoutingModule } from './images-routing.module';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FavoritesComponent } from './pages/favorites/favorites.component';
 import { SharedModule } from '../shared/shared.module';
-import { ImageHelper } from './helpers/image.helper';
+
 import { MatButtonModule } from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
@@ -22,10 +22,8 @@ import { RouterModule } from '@angular/router';
     RouterModule,
     SharedModule,
     MatButtonModule,
-    MatIconModule
-  ], 
-  providers: [
-    ImageHelper
+    MatIconModule,
+    
   ]
 })
 export class ImagesModule { }

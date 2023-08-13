@@ -6,11 +6,20 @@ import { ImageService } from '../../services/image.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['../../styles/images.component.scss']
+  styleUrls: ['../../../shared/styles/images.component.scss']
 })
 export class DashboardComponent {
 
   imagesCats: CatImage[] = [];
+  configButton = [
+    {
+      color: 'pink',
+      name: 'favorite',
+      function(nameFn: string) {
+          return nameFn;
+      }
+    }
+  ]
 
   private suscription: Subscription = new Subscription;
 

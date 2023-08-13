@@ -1,0 +1,41 @@
+<form [formGroup]="catForm" (ngSubmit)="onSubmit()" class="form-cat">
+
+    <div>
+        <label for="name">
+        Name
+      </label>
+        <input id="name" type="text" formControlName="title">
+    </div>
+
+
+    <div>
+        <label for="name">
+        Race
+      </label>
+        <input id="name" type="text" formControlName="race">
+    </div>
+
+    <div>
+        <label for="name">
+      Click para buscar Photo
+    </label>
+        <img src="{{ image }}" alt="Image selected" (click)="searchImage()" width="400" height="400">
+    </div>
+
+
+    <div>
+        <label for="name">
+        Age
+      </label>
+        <input id="name" type="text" formControlName="age">
+    </div>
+    <button class="button" type="submit">Crear</button>
+
+</form>
+
+
+<div style="display: none;">
+    <!--YOU NEED TO PUT THE COMPONENT INSIDE A HIDDEN DIV-->
+
+    <app-gallery (imageNew)="updateImage($event)" #myAlert [catGallery]="favs"></app-gallery>
+</div>

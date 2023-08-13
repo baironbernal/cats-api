@@ -7,26 +7,28 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { ImageService } from '../images/services/image.service';
+import { MatIconModule } from '@angular/material/icon';
+import { ButtonComponent } from './components/button/button.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    ButtonComponent
   ],
   imports: [
     CommonModule,
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
-    RouterModule
+    MatIconModule,
+    RouterModule,
   ],
   exports: [
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    
   ],
-  providers: [
-    ImageService
-  ]
 })
 export class SharedModule { }
